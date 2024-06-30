@@ -1,0 +1,247 @@
+@import url("https://fonts.cdnfonts.com/css/amazon-ember");
+* {
+  margin: 0;
+  font-family: "Amazon Ember", sans-serif;
+  font-family: "Amazon Ember Cd RC", sans-serif;
+  font-family: "Amazon Ember Display", sans-serif;
+  font-family: "Amazon Ember Duospace", sans-serif;
+  font-family: "Amazon Ember Mono", sans-serif;
+  font-family: "Amazon Ember V2", sans-serif;
+  border: border-box;
+  color: white;
+}
+.border {
+  border: 1.5px solid transparent;
+}
+.padding {
+  padding: 0px 5px 0px 3px;
+}
+.border:hover {
+  border: 1.5px solid white;
+  border-radius: 3px;
+}
+.navbar {
+  height: 60px;
+  background-color: #0f1111;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-logo {
+  height: 50px;
+  width: 113px;
+}
+
+.logo {
+  height: 50px;
+  width: 100%;
+  background-image: url(amazon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/*
+nav address
+*/
+.fa-location-dot {
+  padding-top: 10px;
+  transform: scale(1.1);
+  color: white;
+}
+.nav-add {
+  display: flex;
+  align-items: center;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 3px;
+  padding-right: 5px;
+}
+.add-icon {
+  margin-left: 4px;
+}
+.add-first {
+  color: #cccccc;
+  font-size: 12px;
+}
+.add-sec {
+  color: white;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+/*Search Bar*/
+.select .dark:hover {
+  background-color: #d0d0d0;
+}
+.search-bar {
+  position: relative;
+  overflow: hidden;
+  height: 35px;
+  width: 850px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  border: 3px solid transparent;
+  transition: border 0.3s ease;
+}
+.search-bar::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 0;
+  right: 0;
+  bottom: 4px;
+  border: 2.5px solid transparent; /* Initially transparent */
+  border-radius: 8px; /* Same border radius as search bar */
+  pointer-events: none; /* Allow clicks to pass through */
+}
+
+/* Change border color when input is focused */
+.search-bar:focus-within::before {
+  border-color: #f3a846; /* Change border color to orange on focus */
+}
+select {
+  height: 45px;
+  width: 60px;
+  color: black;
+  background-color: #e6e6e6;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #6e6a65;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+input {
+  height: 40px;
+  width: 730px;
+  color: black;
+}
+.search-icon {
+  height: 45px;
+  width: 55px;
+  background-color: #f3a846;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+i {
+  color: black;
+  transform: scale(1.6);
+}
+
+/*language*/
+.language {
+  height: 50px;
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.usa-flag {
+  height: 16.2px;
+  width: 21.6px;
+}
+.flag {
+  height: 16.2px;
+  width: 21.6px;
+  background-image: url(flag_USA_generated.jpg);
+  background-size: cover;
+}
+.en {
+  height: 50px;
+  width: 20.38px;
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding-left: 4px;
+}
+.second {
+  background-color: transparent;
+  width: 1px;
+  height: 10px;
+  border: 0px;
+  color: white;
+  font-weight: 700;
+  padding-left: 20px;
+  position: relative;
+  top: 8px;
+}
+
+/*account and list section*/
+.hello-account {
+  height: 50px;
+  width: 131.52px;
+  left: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hello-sign {
+  font-size: 13px;
+  font-weight: 400;
+}
+.account {
+  font-size: 14px;
+  font-weight: 700;
+}
+.second-one {
+  background-color: transparent;
+  width: 1px;
+  height: 10px;
+  border: 0px;
+  color: white;
+  font-weight: 700;
+  padding-left: 10px;
+  position: relative;
+  top: 9px;
+  left: 4px;
+}
+
+/*cart*/
+
+.cart-order {
+  height: 50px;
+  width: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cart-icon {
+  height: 26px;
+  position: relative;
+  top: 5px;
+}
+.fa-cart-shopping {
+  color: white;
+}
+.cart-text {
+  position: relative;
+  top: 8px;
+  left: 5px;
+  font-weight: 700;
+}
+
+/*second nav*/
+.nav-second {
+  height: 40px;
+  width: 1;
+  background-color: #232f3e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fa-bars {
+  position: relative;
+  left: 20px;
+  color: white;
+}
+.hamburger {
+  height: 30px;
+  width: 40px;
+}
